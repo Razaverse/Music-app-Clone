@@ -26,7 +26,7 @@ function renderSongList(songsArr) {
 }
 async function getsongs(folder) {
   currentfolder = folder;
-  let a = await fetch(`https://music-app-clone-i5xg.onrender.com/${folder}/`);
+  let a = await fetch(`http://127.0.0.1:3000/${folder}/`);
   let response = await a.text();
   console.log(response);
   let raza = document.createElement("div");
@@ -251,5 +251,6 @@ document.querySelector(".bigbox").addEventListener("click", async (e) => {
   songs         = await getsongs(folder);
   currentfolder = folder;
   renderSongList(songs);
+
 
 });
