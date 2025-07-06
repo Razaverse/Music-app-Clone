@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 256 384">
+  <!-- Forward triangle -->
+  <path fill="#d3d3d3" d="M0 64v256l181-128L0 64z"/>
+  <!-- Forward vertical bar -->
+  <rect x="213" y="64" width="43" height="256" fill="#d3d3d3"/>
+</svg>

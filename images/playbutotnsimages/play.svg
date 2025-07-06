@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+  <!-- White Filled Circle -->
+  <circle cx="12" cy="12" r="11" fill="white" />
+
+  <!-- Black Play Triangle on Top -->
+  <path fill="black" d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/>
+</svg>

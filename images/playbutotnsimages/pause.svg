@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+  <g>
+    <!-- Outer circle background: now white -->
+    <circle cx="8" cy="8" r="8" fill="#FFFFFF"/>
+    
+    <!-- Pause bars: now solid black -->
+    <rect x="5" y="4" width="2" height="8" fill="#000000"/>
+    <rect x="9" y="4" width="2" height="8" fill="#000000"/>
+  </g>
+</svg>

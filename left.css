@@ -1,0 +1,259 @@
+.library {
+  padding: 10px 15px 10px 15px;
+  color: white;
+  font-weight: 7;
+  font-size: 16px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+
+  img {
+    width: 18px;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+}
+
+  .closeicon{
+      display: none;
+  }
+.create,
+.browse {
+  color: white;
+  font-family: sans-serif;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin: 20px 10px;
+  box-sizing: border-box;
+  .a {
+    padding-bottom: 10px;
+    word-break: break-word;
+  }
+  .b {
+    font-size: small;
+    padding-bottom: 20px;
+    word-break: break-word;
+  }
+  button {
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: sans-serif;
+    transform: translateX(-10px);
+    width: calc(46% - 7px); /* Makes button responsive to container width */
+    padding: 10px 8px;
+
+    max-width: 200px; /* Optional: Prevents button from getting too wide */
+    white-space: nowrap; /* Prevents button text from breaking */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+  }
+
+  @media (max-width: 600px) {
+    .left {
+      max-width: 100%; /* Takes full width on small screens */
+    }
+
+    .create,
+    .browse {
+      margin: 10px 0; /* Reduces margin on small screens */
+    }
+  }
+}
+
+.legal {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .legal-link{
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    margin-right: 16px;
+  }
+ 
+
+  .cookies {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.3;
+      padding-left: 15px;
+      padding-bottom: 10px;
+  }
+  .cookie-link{
+    font-size: 13px;
+    color:white;
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  .cookie-link:hover {
+    text-decoration: underline;
+  }
+
+  .language button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 0.5px solid #555;
+  border-radius: 100px;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 7px 10px;
+  transition: color 0.2s ease, transform 0.2s ease ;
+  margin-left: 15px;
+  
+
+}
+
+.language button img {
+
+  width: 13px;
+  height: 15px;
+  object-fit: contain;
+  filter: invert(1);
+
+}
+
+.language button:hover{
+  color:white;
+  transform: scale(1.05);
+}
+
+.availablesongs{
+  padding: 10px 20px 10px 20px;
+  color: white;
+  span{
+    font-family: sans-serif;
+  }
+}
+
+.listsongs{
+  overflow:hidden;
+  border-left: 1px solid white;
+  padding-left: 5px;
+  color: white;
+  margin-top: 15px;
+  width: 100%;
+  max-height: 25vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scrollbar-gutter: stable;
+
+  li{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    h4 ,h6{
+      margin: 1px;
+       white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+    }
+.outerbox1{
+ width: 70%;
+}
+    span{
+
+       display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+      img{
+        height: 20px;
+      }
+    }
+  }
+}
+.listsongs ul {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+    gap: 8px;
+  list-style-type: none;
+}
+.listsongs li:not(:last-child){
+  margin-bottom: 6px;   /* 2-pixel gap between songs */
+}
+
+@media (max-width:1400px) {
+  .left{
+        background-color:rgb(35, 35, 35);
+       width: 23vw;
+       min-width: 300px;
+       position: absolute;
+       transition: transform .3s ease;
+       transform: translateX(-100%);
+      z-index: 1;
+        background: linear-gradient(
+    to bottom,
+   rgba(65, 64, 64, 1) 0%,
+    rgba(65, 64, 64, 1) 20%,
+    #1f1f1f 40%,
+    #1f1f1f 100%
+  );
+  background-attachment: local;
+    }
+
+    
+.threedots{
+  display:block;
+}
+
+
+  .closeicon{
+      display: inline-block;
+
+  }
+
+  .create,
+.browse {
+    padding: 10px 15px;
+  margin: 10px 10px;
+}
+
+.library {
+  margin: 10px 0px;
+}
+.legal {
+  padding: 5px 15px;
+  
+} 
+.outerbox1{
+ width: 65%;
+}
+}
+
+@media (max-width:450px) {
+
+    .left{
+      width: 100%;
+       min-width: 300px;
+    }
+
+   .listsongs .outerbox1{
+ width: 70%;
+}
+.listsongs {
+  max-height: 31vh;
+}
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="use.css" />
+    <link rel="stylesheet" href="right.css" />
+    <link rel="stylesheet" href="left.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="home">
+        <img src="images/logo.svg" alt="logo" class="logo icon-img" />
+        <div class="homelogo">
+          <img src="images/homelogo.svg" alt="home" class="icon-img" />
+        </div>
+        <div class="search">
+          <img src="images/search.svg" alt="search" class="icon-img" />
+          <input
+            type="text"
+            placeholder="What do you want to play?"
+            class="search-input"
+          />
+          <img
+            src="images/browser.svg"
+            alt="browser"
+            class="icon-img browserimg"
+          />
+        </div>
+      </div>
+
+      <div class="options">
+        <ul class="premiumbox">
+          <li><button>Premium</button></li>
+          <li><button>Support</button></li>
+          <li><button>Download</button></li>
+        </ul>
+
+        <ul class="installbox">
+          <li class="install">
+            <button class="font">
+              <img src="images/install.svg" alt="install" /> Install App
+            </button>
+          </li>
+          <li><button class="signup font">Sign up</button></li>
+          <li><button class="login font">Login</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="library">
+          Your Library
+          <div class="close">
+            <img src="images/add.svg" alt="cross" />
+            <img
+              class="closeicon"
+              src="images/less_than_icon_138420.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="create font">
+          <div class="a">Create your first playlist</div>
+          <div class="b">It's easy,we'll help you</div>
+          <button>Create Playlist</button>
+        </div>
+        <div class="browse font">
+          <div class="a">Let's find some podcasts to follow</div>
+          <div class="b">We'll keep you updated on new episodes</div>
+          <button>Browse podcasts</button>
+        </div>
+        <div class="availablesongs">
+          <span>Available Songs</span>
+          <div class="listsongs">
+            <ul></ul>
+          </div>
+        </div>
+
+        <div class="legal">
+          <a class="legal-link" href="">Legal</a>
+          <a class="legal-link" href="">Saftey and Privacy Center</a>
+          <a class="legal-link" href="">Privacy Policy</a>
+          <a class="legal-link" href="">Cookies</a>
+          <a class="legal-link" href="">About Ads</a>
+          <a class="legal-link" href="">Accessibility</a>
+        </div>
+        <div class="cookies">
+          <a class="cookie-link" href="">Cookies</a>
+        </div>
+
+        <span class="language">
+          <button>
+            <img src="images/language.svg" alt="" />
+            English
+          </button></span
+        >
+      </div>
+      <div class="right">
+        <img
+          class="threedots"
+          src="images/nav_hamburger_menu_icon_255925.svg"
+          alt=""
+        />
+        <div class="top-gradient"></div>
+
+        <div class="trendingsongs">
+          <span class="title fonttitle">Classified Albums</span>
+          <div class="bigbox"></div>
+        </div>
+        <script src="trendingsong.js"></script>
+<!-- 
+        <div class="artists">
+           <span class="title fonttitle">Popular artists</span>
+         
+          <div class="popartist"></div>
+          <script src="popularartists.js"></script>
+        </div> -->
+<!--  -->
+        <!-- <div class="albums">
+              <span class="title fonttitle">Popular albums and singles</span>
+  
+          <div class="popalbums"></div>
+          <script src="popalbums.js"></script>
+        </div> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="playbar">
+        <div class="songdetails">
+          <div class="card">
+            <div class="songphoto">
+              <img
+                id="cover"
+                src="images/ab67616d00001e02114e03dcb192736b33a42cb5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="minisongdetails">
+              <span id="miniTitle">Song name</span>
+              <span id="miniArtist">Artist</span>
+            </div>
+          </div>
+        </div>
+        <div class="playcontrol">
+          <div class="playbuttons">
+            <img id="previous" src="images/playbutotnsimages/prev.svg" alt="" />
+
+            <img id="play" src="images/playbutotnsimages/play.svg" alt="" />
+            <img id="next" src="images/playbutotnsimages/frow.svg" alt="" />
+            <img id="repeat" src="" alt="" />
+            <img src="" alt="" />
+          </div>
+          <div class="parentseekbaar">
+            <div class="timer">00:00/00:00</div>
+            <div class="seekbar"><div class="circle"></div></div>
+          </div>
+        </div>
+
+        <div class="songsettings">
+          <div class="parentvolume">
+            <div class="volume">
+            <img id="volume" src="images/volume.svg" alt="" />
+            <div class="volumebar">
+              <input
+                type="range"
+                id="volumebar"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+              />
+            </div>
+          </div>
+          </div>
+          
+        </div>
+        <script src="server.js"></script>
+      </div>
+    </footer>
+
+    <div class="fullscreen-player" id="fullscreenPlayer">
+      <button class="close-fullscreen" id="closeFullscreen">−</button>
+
+      <div class="player-content">
+        <div class="album-art">
+          <img id="fullscreenAlbumArt" src="" alt="Album Art" />
+        </div>
+
+        <div class="song-details">
+          <h1 id="fullscreenSongTitle">Song Title</h1>
+          <h2 id="fullscreenArtist">Artist</h2>
+          <p id="fullscreenStats">2025 • 2:59 • 18,822,059 plays</p>
+        </div>
+
+
+      <div class="fsplaycontrol">
+          <div class="fsplaybuttons">
+            <img id="fsprevious" src="images/playbutotnsimages/prev.svg" alt="" />
+
+            <img id="fsplay" src="images/playbutotnsimages/play.svg" alt="" />
+            <img id="fsnext" src="images/playbutotnsimages/frow.svg" alt="" />
+            <img id="fsrepeat" src="" alt="" />
+            <img src="" alt="" />
+          </div>
+     
+<div class="parentseekbaar">
+  <div class="fstimer" id="fsTimer">00:00</div>           
+  <div class="fsseekbar" id="fsSeekbar">
+    <div class="fscircle" id="fsCircle"></div>
+  </div>
+</div>
+
+        </div>
+
+       
+      </div>
+    </div>
+    <script src="songslide.js"></script>
+  </body>
+</html>
