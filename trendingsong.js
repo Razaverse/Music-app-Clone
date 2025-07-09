@@ -37,3 +37,4 @@ song("images/ab67616d00001e02114e03dcb192736b33a42cb5.jpg" , "Trending" ,"Pritam
 song("	https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" , "cool","","","Ed Sheeran","songs/cool")
 song("https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" , "Sad" ,"Mithoon","Ankit Tiwari" , "Jeet Gannguli","songs/sad" )
 song("https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" ,"Emotional" ,"Pritam", "", "" , "songs/Emotional")
+song("https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" ,"HARSHITH" , "" ,"" ,"" ,"songs/Harshith")
