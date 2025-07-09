@@ -37,3 +37,5 @@ song("images/ab67616d00001e02114e03dcb192736b33a42cb5.jpg" , "Trending" ,"Pritam
 song("images/cool.jpg" , "cool","","","Ed Sheeran","songs/cool")
 song("images/sad.jpg" , "Sad" ,"Mithoon","Ankit Tiwari" , "Jeet Gannguli","songs/sad" )
 song("images/Emotional.jpg" ,"Emotional" ,"Pritam", "", "" , "songs/Emotional")
+song("images/love.jpg" ,"Love" ,"Pritam", "", "" , "songs/Love")
+
